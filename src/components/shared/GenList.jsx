@@ -69,14 +69,17 @@ const systemInstructionObject = {
 };
 
 const INITIAL_SCREEN_CHIPS = [
-  { label: "🇫🇷 Paris packing list", message: "Paris packing list" },
-  { label: "🎬 Top 10 cult classics", message: "Top 10 cult classics" },
-  { label: "📚 Sci-fi reading list", message: "Sci-fi reading list" },
-  { label: "🍪 Cookie ingredients", message: "Cookie ingredients" },
+  { label: "Sheduled Projects", message: "Sheduled Projects" },
+  { label: "Delivery Dates", message: "Delivery Dates" },
+  { label: "Warehouse Locations", message: "Warehouse Locations" },
+  { label: "Work Allotment", message: "Work Allotment" },
 ];
 
 const LIST_SCREEN_CHIPS = [
-  { label: "😊 Add more emojis", message: "Add more emojis to list items" },
+  {
+    label: "😊 Add more description",
+    message: "Add more descriptive lines to list items",
+  },
   {
     label: "✨ Organise into categories",
     message: "Organise it into categories",
@@ -85,7 +88,10 @@ const LIST_SCREEN_CHIPS = [
     label: "💫 Break into separate lists",
     message: "Break it down into separate lists",
   },
-  { label: "🪄 Clear and start again", message: "Clear and start again" },
+  {
+    label: "🪄 Clear and start again",
+    message: "Delete the lists and start again",
+  },
 ];
 
 function GenListComponent() {

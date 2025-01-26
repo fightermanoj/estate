@@ -4,10 +4,23 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div>
-      <div className="flex justify-center">
+      <div className="flex justify-center pt-5">
+        <img src="/assets/images/estate.jpg" alt="estate" className="size-32" />
+      </div>
+      <div className="flex flex-wrap justify-center items-center gap-2">
+        <img
+          src="https://www.aurigo.com/wp-content/themes/aurigo/images/logo.svg"
+          alt="aurigo"
+          className="w-32 h-18"
+        />
         <h1 className="md:text-7xl text-4xl text-center text-white font-extrabold p-5">
           - E'STATE -
         </h1>
+        <img
+          src="/assets/images/pragyan.png"
+          alt="pragyan"
+          className="w-32 h-18"
+        />
       </div>
       <h2 className="text-white text-center">
         Estate Surveillance and TRACKING for Advanced Transformation
