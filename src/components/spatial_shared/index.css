@@ -1,0 +1,32 @@
+input, select {
+  accent-color: var(--accent-color);
+}
+
+input[type="text"],
+textarea {
+  color: var(--text-color-primary);
+  border: 1px solid var(--border-color);
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+.border,
+.border-l,
+.border-t,
+.border-b,
+.border-r {
+  border-color: var(--border-color);
+}
+
+.hide-box .bbox {
+  opacity: 0;
+  z-index: -1;
+}
+.hide-box .bbox.reveal {
+  opacity: 1;
+  z-index: 1;
+}

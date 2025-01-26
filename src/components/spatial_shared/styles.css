@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+.dark {
+  --bg-color: #1C1F21;
+  --accent-color: #7FBBFF;
+  --border-color: #37393c;
+  --box-color: #141619;
+  --text-color-primary: #fff;
+  --text-color-secondary: #8c8d8e;
+  --input-color: #404547;
+  color: var(--text-color-primary);
+  background-color: white;
+  color-scheme: dark;
+}
+
+button, .button {
+  appearance: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: var(--text-color-primary);
+  border: 1px solid var(--border-color);
+  padding: 14px 20px;
+  border-radius: 24px;
+  min-height: 56px;
+}
+
+button.secondary {
+  padding: 0px 16px;
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+}
+
+button:hover, .button:hover {
+  border-color: var(--accent-color);
+}
+
+a {
+  cursor: pointer;
+  color: var(--text-color-primary);
+  text-decoration: underline var(--accent-color);
+}
+
+a:hover {
+  text-decoration-color: var(--text-color-primary);
+}
+
+input[type="text"] {
+  appearance: none;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: white;
+  border: none;
+  padding: 14px 18px;
+}
+
+input[type="text"]::placeholder {
+  color: var(--text-color-secondary);
+}
+
+/* input:focus {
+  outline: none;
+} */
+
+input[type="range"] {
+  accent-color: var(--accent-color);
+}
+
+
+.box {
+  border-radius: 24px;
+  background: white;
+  padding: 28px 42px;
+  font-size: var(--text-size-large);
+  margin: 30px 0;
+}
+
+.box-caption {
+  color: white;
+  background: var(--accent-color);
+  border-radius: 24px;
+  padding: 14px 28px;
+  max-width: 340px;
+}
