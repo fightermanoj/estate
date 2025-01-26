@@ -1,6 +1,5 @@
 import React from "react";
 import ThreeD from "./ThreeD";
-import HugFace from "./HugFace";
 
 const Wrap = () => {
   return (
