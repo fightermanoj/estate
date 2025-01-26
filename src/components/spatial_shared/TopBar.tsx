@@ -44,7 +44,7 @@ export function TopBar() {
             minHeight: "0",
           }}
         >
-          <div>Reset session</div>
+          <div className="text-white">Reset session</div>
         </button>
       </div>
       <div className="flex gap-3 items-center">
@@ -61,13 +61,13 @@ export function TopBar() {
                   setRevealOnHoverMode(e.target.checked);
                 }}
               />
-              <div>reveal on hover</div>
+              <div className="text-white">reveal on hover</div>
             </label>
           </div>
         ) : null}
         {showConfig && (<label className="flex gap-2 items-center">
           <select
-            className="border bg-transparent py-1 px-1 focus:border-[#80BBFF] rounded-md"
+            className="border text-blue-500 bg-transparent py-1 px-1 focus:border-[#80BBFF] rounded-md"
             value={modelSelected}
             onChange={(e) => {
               const value = e.target.value;

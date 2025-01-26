@@ -97,7 +97,7 @@ function GenListComponent() {
       generationConfig: {
         responseModalities: "audio",
         speechConfig: {
-          voiceConfig: { prebuiltVoiceConfig: { voiceName: "Puck" } },
+          voiceConfig: { prebuiltVoiceConfig: { voiceName: "Aoede" } },
         },
       },
       systemInstruction: systemInstructionObject,

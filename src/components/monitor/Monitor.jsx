@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
 import PropTypes from "prop-types";
 import { LiveAPIProvider } from "../../contexts/LiveAPIContext";
+import { DangerAlert } from "./DangerAlertComponent";
 import SidePanel from "../shared/SidePanel";
-import { GenList } from "./GenList";
 import ControlTray from "../shared/ControlTray";
 import clsx from "clsx";
 import "./Monitor.scss";
@@ -27,7 +27,7 @@ const StreamingConsole = ({ apiKey, uri, supportsVideo = true }) => {
         <main>
           <div className="main-app-area">
             {/* Main application area */}
-            <GenList />
+            <DangerAlert />
             <video
               className={clsx("stream", {
                 hidden: !videoRef.current || !videoStream,

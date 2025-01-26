@@ -212,14 +212,14 @@ export function Prompt() {
   return (
     <div className="flex grow flex-col gap-3">
       <div className="flex justify-between items-center">
-        <div className="uppercase">Prompt:</div>
+        <div className="uppercase text-white">Prompt:</div>
         <label className="flex gap-2 select-none">
           <input
             type="checkbox"
             checked={showRawPrompt}
             onChange={() => setShowRawPrompt(!showRawPrompt)}
           />
-          <div>show raw prompt</div>
+          <div className="text-white">show raw prompt</div>
         </label>
       </div>
       <div className="w-full flex flex-col">
@@ -246,7 +246,7 @@ export function Prompt() {
           </div>
         ) : (
           <div className="flex flex-col gap-2">
-            <div>{prompts[detectType][0]}:</div>
+            <div className="text-white">{prompts[detectType][0]}:</div>
             <textarea
               className="w-full bg-white/70 rounded-lg resize-none p-4"
               placeholder="What kind of things do you want to detect?"
@@ -271,7 +271,7 @@ export function Prompt() {
             />
             {is2d && (
               <>
-                <div>Label each one with: (optional)</div>
+                <div className="text-white">Label each one with: (optional)</div>
                 <textarea
                   className="w-full bg-white/70 rounded-lg resize-none p-4"
                   rows={1}
@@ -297,7 +297,7 @@ export function Prompt() {
         >
           Send
         </button>
-        <label className="flex items-center gap-2">
+        <label className="flex items-center gap-2 text-white">
           temperature:
           <input
             type="range"

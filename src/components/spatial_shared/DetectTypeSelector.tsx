@@ -20,7 +20,7 @@ import { DetectTypes } from "./Types.js";
 export function DetectTypeSelector() {
   return (
     <div className="flex flex-col flex-shrink-0">
-      <div className="mb-3 uppercase">Give me:</div>
+      <div className="mb-3 uppercase text-white">Give me:</div>
       <div className="flex flex-col gap-3">
         {["2D bounding boxes", "Points", "3D bounding boxes"].map((label) => (
           <SelectOption key={label} label={label} />

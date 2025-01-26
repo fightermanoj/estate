@@ -4,6 +4,8 @@ import RootLayout from "./_root/RootLayout";
 import { Home } from "./_root/pages";
 import StreamingConsole from "./components/StreamingConsole";
 import Spatial from "./components/spatial_shared/App";
+import Monitor from "./components/monitor/Monitor";
+import Wrap from "./components/bim/Wrap";
 
 const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 if (typeof API_KEY !== "string") {
@@ -26,6 +28,11 @@ const App = () => {
           element={<StreamingConsole apiKey={API_KEY} uri={uri} />}
         />
         <Route path="/spatial" element={<Spatial />} />
+        <Route path="/3d" element={<Wrap />} />
+        <Route
+          path="/monitor"
+          element={<Monitor apiKey={API_KEY} uri={uri} />}
+        />
         {/* <Route path="/spatial" element={<Spatial />} /> */}
         <Route path="*" element={<h1>Not Found</h1>} />
       </Routes>
