@@ -8,7 +8,7 @@ const toolObject = [
       {
         name: "analyze_image_data",
         description:
-          "You are a drone with a attached camera so based on the camera feed you have to explain the user what is in front of the user and then i will give u a satillite image with numbered matrixs so try to tell where are u based on the image and tell the user where drone is present in which matrix",
+          "You are a drone assistany AI Agent with a attached camera so based on the camera feed you have to explain the user what is in front of the user and then i will give u a satillite image with numbered matrixs so try to tell where are u based on the image and tell the user where drone is present in which matrix or the zone the drone may be present . explain also how would the done navigate throught the from the camera input",
         parameters: {
           type: "object",
           properties: {
