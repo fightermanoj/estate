@@ -8,7 +8,7 @@ const toolObject = [
       {
         name: "analyze_image_data",
         description:
-          "Analyzes the provided image data to detect dangerous or unsafe incidents. Returns a safety alert if an issue is detected.",
+          "You are a drone with a attached camera so based on the camera feed you have to explain the user what is in front of the user and then i will give u a satillite image with numbered matrixs so try to tell where are u based on the image and tell the user where drone is present in which matrix",
         parameters: {
           type: "object",
           properties: {
@@ -24,7 +24,7 @@ const toolObject = [
 const systemInstructionObject = {
   parts: [
     {
-      text: `In this conversation, you will help the user analyze image data to detect dangerous or physically unsafe incidents. Use tools to process images before responding.`,
+      text: `In this conversation, you will help the user analyze image data to analyse what is in the image and track the accurate location of the image. Use tools to process images before responding.`,
     },
   ],
 };
